@@ -13,7 +13,7 @@ namespace PaymentContext.Tests.Entities
         [TestMethod]
         public void TestMethod1()
         {
-            var student = new Student("João", "Lima", "1233456", "joao@gmail.com");
+            
         }
     }
 }

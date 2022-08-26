@@ -1,8 +1,10 @@
-﻿namespace PaymentContext.Domain.Entities
+﻿using PaymentContext.Domain.ValueObjects;
+
+namespace PaymentContext.Domain.Entities
 {
     public class CreditCardPayment : Payment
     {
-        public CreditCardPayment(string cardHolderName, string cardNumber, string lastTransactionNumber, DateTime paidDate, DateTime expireDate, decimal total, decimal totalPaid, string document, string payer, string adress)
+        public CreditCardPayment(string cardHolderName, string cardNumber, string lastTransactionNumber, DateTime paidDate, DateTime expireDate, decimal total, decimal totalPaid, Document document, string payer, Address adress)
             : base(paidDate, expireDate, total, totalPaid, document, payer, adress)
         {
             CardHolderName = cardHolderName;
